@@ -4,7 +4,7 @@
   "description": "Export Cursor chat and composer history",
   "main": "index.js",
   "bin": {
-    "cursor-export": "cli.js"
+    "cursor-export-tool": "cli.js"
   },
   "files": [
     "index.js",
