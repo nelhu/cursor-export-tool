@@ -99,7 +99,7 @@ async function exportChatTab (tab, workspace, workspaceName, outputDir, workspac
 
 async function exportComposer (composer, workspace, workspaceName, outputDir, workspaceData) {
   // Skip empty composers
-  if (!composer.text && (!composer.conversation || composer.conversation.length === 0)) {
+  if (!composer.conversation || composer.conversation.length === 0) {
     return;
   }
 

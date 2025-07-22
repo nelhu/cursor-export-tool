@@ -70,7 +70,7 @@ const safeParseTimestamp = (timestamp) => {
 // Get all workspaces with chat data
 async function getAllWorkspaces () {
   try {
-    const workspacePath = process.env.WORKSPACE_PATH || '/Users/scott/Library/Application Support/Cursor/User/workspaceStorage';
+    const workspacePath = process.env.WORKSPACE_PATH || '/Users/xuezi/Library/Application Support/Cursor/User/workspaceStorage';
     const workspaces = [];
 
     const entries = await fs.readdir(workspacePath, { withFileTypes: true });
@@ -141,7 +141,7 @@ async function getAllWorkspaces () {
 async function getWorkspaceDetail (workspaceId, workspaceFolder) {
 
   try {
-    const workspacePath = process.env.WORKSPACE_PATH || '/Users/scott/Library/Application Support/Cursor/User/workspaceStorage';
+    const workspacePath = process.env.WORKSPACE_PATH || '/Users/xuezi/Library/Application Support/Cursor/User/workspaceStorage';
     const dbPath = path.join(workspacePath, workspaceId, 'state.vscdb');
 
     if (DEBUG) {

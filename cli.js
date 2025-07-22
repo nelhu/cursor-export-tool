@@ -14,7 +14,7 @@ async function main () {
       alias: 'w',
       describe: 'Path to Cursor workspace storage',
       type: 'string',
-      default: '/Users/scott/Library/Application Support/Cursor/User/workspaceStorage'
+      default: '/Users/xuezi/Library/Application Support/Cursor/User/workspaceStorage'
     })
     .help('h')
     .alias('h', 'help')
